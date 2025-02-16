@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .p2 {
+            background-color: aqua;
+            height: 20vh;
+            width: 20%;
+            animation-name: hello;
+            animation-delay: 1s;
+            animation-duration: 5s;
+            animation-iteration-count: 1;
+            animation-play-state: running;
+            animation-direction: alternate;
+            animation-timing-function: ease-out;
+        }
+
+        .content {
+            display: inline-block;
+            animation-name: text;
+            animation-duration: 5s;
+            animation-delay: 2s;
+
+        }
+
+        @keyframes hello {
+            0% {
+                margin-left: 800px;
+                margin-top: 0px;
+            }
+
+            50% {
+
+            }
+
+            100% {
+                margin-left: 0px;
+                margin-top: 0px;
+                background-color: rebeccapurple;
+            }
+
+        }
+
+        @keyframes text {
+            0% {
+                scale: 100%;
+                background-color: yellow;
+            }
+
+            50% {
+                scale: 400%;
+
+            }
+
+            100% {
+                scale: 100%;
+            }
+        }
+    </style>
+    <title>P2</title>
+
+</head>
+
+<body>
+    <div class="p2">
+        <h1>I am <span class="content" style="color: rgb(50, 97, 4);">Dhairy</span></h1>
+    </div>
+</body>
+
+</html>

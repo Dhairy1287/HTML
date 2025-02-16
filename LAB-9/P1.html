@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P1</title>
+    <style>
+        .enime {
+            background-color: pink;
+            height: 45vh;
+            width: 250px;
+            animation-name: position;
+            animation-duration: 8s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            animation-play-state: running;
+            animation-timing-function: ease-in-out;
+            animation-direction: alternate;
+
+
+        }
+
+        @keyframes position {
+            0% {
+                margin-left: 0px;
+                background-color: red;
+                margin-top: 0px;
+                transform: scale(1);
+            }
+
+            25% {
+                margin-left: 500px;
+                margin-top: 0px;
+                transform: scale(1.2);
+                background-color: darkolivegreen;
+            }
+
+            50% {
+                margin-left: 500px;
+                margin-top: 400px;
+                transform: scale(1.4);
+                background-color: brown;
+            }
+
+            75% {
+                margin-left: 0px;
+                margin-top: 400px;
+                transform: scale(1.8);
+            }
+
+            100% {
+                margin-left: 0px;
+                background-color: blue;
+                margin-top: 0px;
+                transform: scale(2);
+                
+            }
+        }
+
+        @keyframes pos {
+            0% {
+                padding-left: 0px;
+                background-color: red;
+                padding-top: 0px;
+            }
+
+            25% {
+                padding-left: 200px;
+                padding-top: 0px;
+            }
+
+            50% {
+                padding-left: 200px;
+                padding-top: 200px;
+            }
+
+            75% {
+                margin-left: 0px;
+                margin-top: 200px;
+            }
+
+            100% {
+                padding-left: 0px;
+                background-color: blue;
+                padding-top: 0px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="enime"></div>
+</body>
+
+</html>
